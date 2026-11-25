@@ -6,6 +6,8 @@ Writes one fortune cookie line to /output/entry.txt.
 
 import os
 
+# One line, at most 20 words of plain text. The em dash stands alone, so
+# whitespace splitting counts it as a token: this line is exactly 20 words.
 FORTUNE = "Your lucky numbers are 0, 0, 0, 0 \u2014 the market took the rest, but your sense of humour survived."
 
 def main():
